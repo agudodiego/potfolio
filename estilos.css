@@ -26,7 +26,7 @@ html{
 
 /* -------------------- Inicio -------------------- */
 .header{
-    background-image: url(img/fondo_negro_textura.jpg);
+    background: url(img/fondo_negro_textura.jpg) #000;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
