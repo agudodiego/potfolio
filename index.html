@@ -13,6 +13,11 @@
 </head>
 
 <body>
+
+    <div class="contenedor-loader">
+        <div class="loader"></div>
+    </div>
+
     <header class="header" id="header">
         <div class="header-cont">
             <div class="menu">
@@ -265,6 +270,20 @@
 
         </div>
     </section>
+
+    <script>
+
+        window.addEventListener("load",()=>{
+            const $contLoader = document.querySelector(".contenedor-loader");
+            const $headeBoton = document.querySelector(".header__boton");
+            const $caratulaIzquierda = document.querySelector(".caratula__izquierda");
+
+            $contLoader.style.display = "none";
+            $headeBoton.style.animationName = "showbtn";
+            $caratulaIzquierda.style.animationName = "desplazamiento";
+        })
+        
+    </script>
 
 </body>
 

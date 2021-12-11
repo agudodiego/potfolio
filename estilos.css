@@ -25,8 +25,40 @@ html{
 }
 
 /* -------------------- Inicio -------------------- */
+
+/* +++++++++++++++ */
+/*   ++loader++    */
+/* +++++++++++++++ */
+
+.contenedor-loader{
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    width: 70px;
+    height: 70px;
+    border: 10px solid #555;
+    border-top: 10px solid var(--rojo--primario);
+    border-radius: 100%;
+    animation: giroLoader 1s linear infinite;
+}
+
+@keyframes giroLoader{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+/* -------------------- Header -------------------- */
+
 .header{
-    background: url(img/fondo_negro_textura.jpg) #000;
+    background: url(img/fondo_negro_textura.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -121,7 +153,7 @@ html{
     margin-top: 90px;
     background-color: var(--rojo--primario);;
     border-radius: 5px;
-    animation-name: showbtn;
+    /* animation-name: showbtn; */
     animation-duration: 2s;
     animation-iteration-count: initial;
     animation-timing-function: linear;
@@ -145,7 +177,7 @@ html{
     padding-top: 25vh;
     padding-left: 10vw;   
     z-index: 10;
-    animation-name: desplazamiento;
+    /* animation-name: desplazamiento; */
     animation-duration: 1.5s;
 }
 
