@@ -94,6 +94,13 @@ html{
     border-radius: 10px;
     text-align: center;
     padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__lang{
+    margin-left: 5px;
 }
 
 .menu__A3D{
