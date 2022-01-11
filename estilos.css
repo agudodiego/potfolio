@@ -102,6 +102,10 @@ html{
 .menu__lang{
     margin-left: 5px;
 }
+.menu__esp,
+.menu__eng{
+    text-decoration: none;
+}
 
 .menu__A3D{
     width: 100%;
