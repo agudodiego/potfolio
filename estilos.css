@@ -89,9 +89,6 @@ html{
 }
 
 .menu__logo{
-    width: 60px;
-    min-width: 60px;
-    border-radius: 10px;
     text-align: center;
     padding-top: 4px;
     display: flex;
@@ -105,10 +102,12 @@ html{
 .menu__esp,
 .menu__eng{
     text-decoration: none;
+    color: #999;
 }
 
 .menu__A3D{
     width: 100%;
+    width: 50px;
 }
 
 .menu__listado{
