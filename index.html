@@ -296,11 +296,18 @@
 
         window.addEventListener("load",()=>{
             const $contLoader = document.querySelector(".contenedor-loader");
-            const $headeBoton = document.querySelector(".header__boton");
+            const $headBoton = document.querySelector(".header__boton");
             const $caratulaIzquierda = document.querySelector(".caratula__izquierda");
+            const $enlaceIdioma = document.querySelector(".menu__eng");            
+            const $width = screen.width;
 
+            // console.log(window.screen);
+
+            if ($width <= 742){
+                $enlaceIdioma.innerText = "(🇺🇸);";
+            }
             $contLoader.style.display = "none";
-            $headeBoton.style.animationName = "showbtn";
+            $headBoton.style.animationName = "showbtn";
             $caratulaIzquierda.style.animationName = "desplazamiento";
         })
         
